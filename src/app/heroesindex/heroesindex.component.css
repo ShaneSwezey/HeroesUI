@@ -1,0 +1,56 @@
+.classWork {
+    color: red;
+}
+
+.heroListContainer {
+    color: red;
+}
+
+.rolesContainer {
+    text-align: center;
+}
+
+.roleContainer {
+    display: inline-block;
+    margin-left: 0px;
+}
+
+.roleImg {
+    height: 125px;
+    width: 125px;
+    cursor: pointer;
+}
+
+.heroIcon {
+    display: inline-block;
+    margin: 5px;
+}
+
+.heroPortrait {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.inputContainer {
+    float: left;
+    margin: 50px 0px 50px 50px;
+}
+
+#heroInput {
+    background-color: #BA55D3;
+    outline: none;
+    border: none;
+    color: #FFF;
+}
+
+.heroButton {
+    background-color: #BA55D3;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+}
+

@@ -1,0 +1,42 @@
+<input id="heroInput" type="search" #heroSearch>
+<button class="heroButton" type="submit" (click)="getHero(heroSearch.value)">Search</button>
+<div class="rolesContainer">
+  <div class="roleContainer">
+    <a (click)="getHeroesByRole('Warrior')">
+      <img class="roleImg" src='../../assets/roles/Warrior.png' title="Warrior">
+    </a>
+  </div>
+  <div class="roleContainer">
+    <a (click)="getHeroesByRole('Assassin')">
+      <img class="roleImg" src="../../assets/roles/Assassin.png" title="Assassin">
+    </a>
+  </div>
+  <div class="roleContainer">
+    <a (click)="getHeroesByRole('Support')">
+      <img class="roleImg" src="../../assets/roles/Support.png" title="Support">
+    </a>
+  </div>
+  <div class="roleContainer">
+    <a (click)="getHeroesByRole('Specialist')">
+      <img class="roleImg" src="../../assets/roles/Specialist.png" title="Specialist">
+    </a>
+  </div>
+  <div class="roleContainer">
+    <a (click)="getHeroesByRole('Multiclass')">
+      <img class="roleImg" src="../../assets/roles/Multiclass.png" title="Multiclass">
+    </a>
+  </div>
+  <div class="resetButtonContainer">
+    <button class="heroButton" (click)="getAllHereos()">Reset</button>
+  </div>
+</div>
+<div class="heroListContainer">
+  <ul>
+    <li class="heroIcon" *ngFor="let hero of heroList" (click)="goToHeroDetail(hero.name)">
+        <img class="heroPortrait" src="../../assets/portraits/{{hero.name}}_Hero_Portrait.png" 
+        title="{{hero.name}}"
+        alt="{{hero.name}}"
+        >
+    </li>
+  </ul>
+</div>

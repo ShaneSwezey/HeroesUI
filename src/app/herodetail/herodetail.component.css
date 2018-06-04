@@ -1,0 +1,15 @@
+img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.heroContainer {
+    color: #FFF;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+    position: relative;
+    float: right;
+    z-index: 1000;
+}
