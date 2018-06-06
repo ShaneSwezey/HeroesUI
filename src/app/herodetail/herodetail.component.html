@@ -1,10 +1,16 @@
 <div class="imgContainer">
   <img src="../../assets/herobackground/{{hero.name}}_home_screen.jpg">
 </div>
-<div class="heroContainer" nglf="hero">
-    <p>Title - {{ hero.title }}</p>
-    <p>Hero - {{ hero.name }}</p>
-    <p>Description - {{ hero.description }}</p>
-    <p>Role - {{ hero.role }}</p>
-    <p>Universe - {{ hero.universe }}</p>
+<div class="heroContainer">
+    <div class="category">
+      <span id="heroName">{{ hero.name }}</span>
+      <span id="heroTitle"> - {{ hero.title }}</span>
+    </div>
+    <div class="category">{{ hero.description }}</div>
+    <div class="category">
+      <span class="descriptor">Role</span> 
+      - {{ hero.role }}
+      <img id="classImg" src="../../assets/roles/{{hero.role}}.png" title="{{hero.role}}">
+    </div>
+    <div class="category"><span class="descriptor">Universe</span> - {{ hero.universe }}</div>
 </div>

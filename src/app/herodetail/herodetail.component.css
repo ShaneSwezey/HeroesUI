@@ -12,4 +12,26 @@ img {
     position: relative;
     float: right;
     z-index: 1000;
+    background-color: #BA55D3;
+    border-color: #FFF;
+    border-style: solid;
+    border-width: 2px;
 }
+
+.descriptor  {
+    font-weight: bold;
+}
+
+.category {
+    margin-top: 15px;
+}
+
+#heroName  {
+    font-size: 20px;
+}
+
+#classImg {
+    height: 25px;
+    width: 25px;
+}
+
