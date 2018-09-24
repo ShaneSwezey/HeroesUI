@@ -23,6 +23,10 @@
 
 .heroIcon {
     display: inline-block;
+    background-color: #BA55D3;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
     margin: 5px;
 }
 
@@ -31,6 +35,11 @@
     width: 70px;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.heroPortrait:hover {
+    transition: all 1s;
+    transform: translate(-7px, -7px);
 }
 
 .inputContainer {

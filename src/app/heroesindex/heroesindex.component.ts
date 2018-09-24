@@ -28,15 +28,14 @@ export class HeroesindexComponent implements OnInit {
     this.heroService.getHeroesByRole(role).subscribe(result => this.heroList = result);
   }
 
-  /*
-  private getHero(name: string) {
-   this.heroService.getHeroByName(name).subscribe(result => this.heroList = result);
-  }
-  */
-
   private goToHeroDetail(name: string) {
     console.log(`detail: ${name}`);
     this.router.navigate(['/herodetail', name]);
   }
 
+   /*
+  private getHero(name: string) {
+   this.heroService.getHeroByName(name).subscribe(result => this.heroList = result);
+  }
+  */
 }
