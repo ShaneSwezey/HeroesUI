@@ -35,10 +35,10 @@
     width: 70px;
     border-radius: 50%;
     cursor: pointer;
+    transition: all 1.2s;
 }
 
 .heroPortrait:hover {
-    transition: all 1s;
     transform: translate(-7px, -7px);
 }
 
