@@ -55,11 +55,14 @@
 }
 
 .heroButton {
-    background-color: #BA55D3;
-    border: none;
+    background-color: transparent;
+    border: 2px solid #FFF;
     border-radius: 5px;
+    width: 60px;
+    height: 25px;
     outline: none;
     color: #FFF;
+    font-weight: bold;
     cursor: pointer;
 }
 
