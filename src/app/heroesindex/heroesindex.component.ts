@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { HeroapiService } from '../services/heroapi.service';
 import { Hero } from '../models/Hero';
 import { Observable } from 'rxjs/Observable';
@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 })
 export class HeroesindexComponent implements OnInit {
 
+  @ViewChild('heroButton') resetButton: ElementRef;
   private heroList: Observable<Hero>;
 
   constructor(private heroService: HeroapiService, private router: Router) { }
